@@ -55,6 +55,23 @@ What's in the box:
 
 The project system auto-generates a `CLAUDE.md` per video project so Claude can pick up where you left off across sessions.
 
+### brand-film
+
+Narrated, on-brand explainer films from a deck, a document or a story. Instead of Remotion, each scene is a plain HTML page whose `render(t)` draws any moment; headless Chrome steps it frame by frame and ffmpeg encodes it. The focus is brand fidelity and narration you can trust.
+
+| | |
+|---|---|
+| **Author** | davidscotttufts |
+| **Source** | [davidscotttufts/brand-film](https://github.com/davidscotttufts/brand-film) |
+| **Install** | `/plugin marketplace add davidscotttufts/brand-film` or `npx skills add davidscotttufts/brand-film` |
+| **Example** | [48-second film, made with it](https://davidscotttufts.github.io/brand-film/) |
+
+What's in the box:
+- **Brand tokens** — exact colours (contrast-checked), typefaces, official logo files and narrator in one `brand-tokens.json`
+- **Pronunciation lexicon** — write "ffmpeg", the voice is sent "eff eff em peg", the captions keep the written form
+- **Listening check** — every ElevenLabs take is transcribed with speech-to-text and re-voiced if a word or brand name is wrong
+- **Verified renders** — frame count, loudness and captions checked on the finished MP4; a lock file records how each take was made
+
 ---
 
 ## Math & Science Animation (Manim)
@@ -211,6 +228,7 @@ brew install ffmpeg  # needs libass support
 |------|------|-------------|-------|
 | Remotion Agent Skills | Skill | React-to-MP4 video generation | One command |
 | Video Toolkit (digitalsamba) | Skills + Commands | Full video production pipeline | Clone repo |
+| brand-film | Plugin | Narrated brand films from HTML + ElevenLabs | Plugin install |
 | Manim Skill (Yusuke710) | Plugin | 3Blue1Brown-style math animation | Plugin install |
 | Math-To-Manim | Plugin | Multi-pipeline Manim (Claude/Gemini/Kimi) | Clone repo |
 | Manim MCP Server | MCP | Renders Manim scenes server-side | Config needed |
