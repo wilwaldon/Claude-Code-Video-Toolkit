@@ -10,6 +10,7 @@ Skills, MCP servers, and tools for producing video with Claude Code. Covers prog
 
 - [Programmatic Video (Remotion)](#programmatic-video-remotion) — React components rendered to MP4
 - [Math & Science Animation (Manim)](#math--science-animation-manim) — 3Blue1Brown-style explainers
+- [Animated Films](#animated-films) — Narrated story films, painted and scored in code
 - [Screen Recording & Demos](#screen-recording--demos) — Product walkthroughs via Playwright
 - [YouTube Clipping & Subtitles](#youtube-clipping--subtitles) — Download, chapter, clip, translate
 - [FFmpeg & Post-Processing](#ffmpeg--post-processing) — Encode, resize, compress, concat
@@ -90,6 +91,23 @@ Renders Manim scenes as an MCP server. Claude writes the scene code, sends it to
 | | |
 |---|---|
 | **Source** | [Medium writeup](https://medium.com/@omchoksi108/i-built-a-public-manim-mcp-server-now-claude-can-produce-real-3blue1brown-videos-on-demand-050995551c4e) |
+
+---
+
+## Animated Films
+
+*Narrated, scored story films from a plain-words request. Claude writes the screenplay and storyboard; a code engine paints, animates and mixes every frame.*
+
+### cinecode (zakariaf)
+
+Claude Code plugin that makes a finished animated film: screenplay, shots, painted sets, animated characters, camera, captions, music, sound effects and a mastered mix, rendered to a 1080p MP4 with subtitles. No image or video models; only the voices come from Gemini TTS. Has a 2D and a 3D engine, and when a film needs a place, character or effect the engine lacks, Claude builds it and passes a gate (`verify-kit`, `verify-rig`, `verify-effect`). The demo, *Our Solar System*, is a 15-minute family film made with Opus 5.5 from one request.
+
+| | |
+|---|---|
+| **Author** | zakariaf |
+| **Install** | `/plugin marketplace add zakariaf/cinecode` then `/plugin install cinecode@cinecode` |
+| **Source** | [zakariaf/cinecode](https://github.com/zakariaf/cinecode) |
+| **Films** | [zakaria.dev/cinecode](https://zakaria.dev/cinecode/) |
 
 ---
 
@@ -215,6 +233,7 @@ brew install ffmpeg  # needs libass support
 | Math-To-Manim | Plugin | Multi-pipeline Manim (Claude/Gemini/Kimi) | Clone repo |
 | Manim MCP Server | MCP | Renders Manim scenes server-side | Config needed |
 | Youtube Clipper | Skill | Download, chapter, clip, subtitle | One command |
+| cinecode | Plugin | Narrated animated films drawn and scored in code | Plugin install |
 | Playwright `--save-video` | MCP flag | Screen recording | One command |
 | FFmpeg Skill | Skill | Video encoding and processing | Part of Video Toolkit |
 
