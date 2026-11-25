@@ -55,6 +55,15 @@ What's in the box:
 
 The project system auto-generates a `CLAUDE.md` per video project so Claude can pick up where you left off across sessions.
 
+### OrkasVideoStudio
+
+OrkasVideoStudio is an MIT-licensed video toolkit for coding agents, including Claude Code. It combines a video skill pack, the `ovs` CLI and a matching MCP server. It can edit footage, compose motion graphics and render MP4s while keeping the timeline and assets in an editable production folder.
+
+| | |
+|---|---|
+| **Source** | [Orkas-AI/Orkas-VideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) |
+| **Entry skill** | [video-studio](https://github.com/Orkas-AI/Orkas-VideoStudio/tree/main/packages/skills/video-studio) |
+
 ---
 
 ## Math & Science Animation (Manim)
